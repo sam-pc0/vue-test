@@ -1,7 +1,25 @@
 <template>
   <section class="container has-text-white">
-    <h3 class="title is-3 has-text-white">Title</h3>
-    <!-- <router-view/> -->
+    <b-navbar class="navbar navbar-default">
+      <b-navbar-brand class="navbar-header">
+        <router-link class="navbar-brand" to="/app/welcome"
+          >Blautech</router-link
+        >
+      </b-navbar-brand>
+
+      <b-navbar-nav class="nav navbar-nav">
+        <b-nav-item
+          ><router-link to="/app/welcome">Welcome</router-link></b-nav-item
+        >
+        <b-nav-item
+          ><router-link to="/app/users">Users</router-link></b-nav-item
+        >
+        <b-nav-item
+          ><router-link to="/app/newuser">Create User</router-link></b-nav-item
+        >
+      </b-navbar-nav>
+    </b-navbar>
+    <router-view></router-view>
   </section>
 </template>
 
@@ -11,4 +29,4 @@ export default {
 };
 </script>
 
-<style lang="scss" src="./App.scss"></style>
+<style lang="scss"></style>
